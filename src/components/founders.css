@@ -1,0 +1,143 @@
+.founders_container {
+    margin-top: 7rem;
+    width: 100%;
+}
+
+.founders_container .founders_main {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 5rem;
+}
+
+.founders_main .founders_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 55%;
+}
+
+.founders_main .founders_left .p1 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.founders_main .founders_left h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--black);
+    width: 70%;
+    margin-top: 0.6rem;
+}
+
+.founders_main .founders_left .text_box .p2 {
+    margin-top: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--light-dark);
+    line-height: 24px;
+}
+
+.founders_main .founders_left .text_box .learn_more {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    border-radius: var(--border-radius-0-4);
+    width: fit-content;
+    transition: 0.3s ease;
+}
+
+.founders_main .founders_left .text_box .learn_more:hover {
+    background: var(--white-color);
+    border: 1px solid var(--primary-color);
+}
+
+.founders_main .founders_left .text_box .learn_more:hover p {
+    color: var(--primary-color);
+}
+
+.founders_main .founders_left .text_box .learn_more:hover .svg path {
+    fill: var(--primary-color);
+}
+
+.founders_main .founders_left .text_box .learn_more p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.founders_main .founders_left .text_box .learn_more .svg {
+    font-size: 1.3rem;
+    color: var(--white-color);
+}
+
+.founders_main .founders_right {
+    width: 45%;
+}
+
+.founders_main .founders_right img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* MEDIA STYLES GOES HERE */
+@media (max-width: 1024px) {
+    .founders_main .founders_left h3 {
+        width: 100%;
+    }  
+}
+
+@media (max-width: 768px) {
+    .founders_container .founders_main {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .founders_main .founders_left  {
+       width: 100%;
+    }
+
+    .founders_main .founders_right  {
+        width: 100%;
+    }
+}
+
+@media (max-width: 426px) {
+    .founders_container .founders_main {
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+    }
+
+    .founders_main .founders_left h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .founders_main .founders_left h3 {
+        font-size: 1.1rem;
+    }
+
+    .founders_main .founders_left .text_box .p2 {
+        font-size: 0.875rem;
+        line-height: 22px;
+    }
+
+    .founders_main .founders_left .text_box .learn_more p {
+        font-size: 0.9rem;
+    }
+    
+    .founders_main .founders_left .text_box .learn_more .svg {
+        font-size: 1.2rem;
+    }
+}

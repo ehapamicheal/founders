@@ -1,0 +1,153 @@
+.attendees_container {
+  margin-top: 7rem;
+  width: 100%;
+}
+
+.attendees_container .attendees_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 96%;
+}
+
+.attendees_main .top-head {
+  text-align: center;
+}
+
+.attendees_main .top-head h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.attendees_main .top-head p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-top: 0.6rem;
+}
+
+.slider_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  max-width: 950px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+}
+
+.slider_container .box_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider_container .box_content .box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  padding: 1rem;
+  background-color: var(--white-color);  
+}
+
+.slider_container .box_content .box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  row-gap: 0.7rem
+} 
+
+.slider_container .box_content .box2 h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.slider_container .box_content .box2 p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.swiper-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+.swiper-buttons .swiper-button-prev,
+.swiper-buttons .swiper-button-next  {
+  border: none;
+  border: 1px solid var(--primary-color);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 0.2rem;
+}
+
+
+/* MEDIA STYLES GOES HERE */
+@media (max-width: 768px) {
+  .attendees_container .attendees_main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+
+  .attendees_main .top-head {
+    margin-bottom: 2rem;
+  }
+
+  .swiper-buttons {
+    right: 4rem;
+  }
+
+  .slider_container .box_content {
+    margin-top: 1rem;
+  }
+  
+  
+}
+
+@media (max-width: 426px) {
+  .attendees_container .attendees_main {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+
+  .attendees_main .top-head h2 {
+    font-size: 1.5rem;
+  }
+  
+  
+}
+
+@media (max-width: 320px) {
+  .slider_container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  
+}
+

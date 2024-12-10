@@ -1,0 +1,115 @@
+.faq_container {
+    margin-top: 7rem;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.faq_container h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.faq_container .faq_main {
+    width: 90%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.faq_container .faq_main .faq_box_content {
+    cursor: pointer;
+}
+
+.faq_box_content .faq_box .faq_flex {
+    display: flex;
+    /* align-items: center; */
+    gap: 1rem;
+}
+
+.faq_box_content .faq_box .faq_flex h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #340066;
+}
+
+.faq_box_content .faq_box .faq_flex span {
+    font-size: 1.3rem;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.faq_box_content .faq_box .faq_flex span.active {
+    transform: rotate(180deg);
+}
+
+.faq_main .faq_box_content .answer_p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: var(--secondary-color);
+    padding-top: 0.8rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    width: 85%;  
+}
+
+.faq_main .faq_box_content .answer_p.show {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+
+
+/* MEDIA STYLES GOES HERE */
+@media (max-width: 768px) {
+    .faq_container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .faq_container .faq_main {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .faq_box_content .faq_box .faq_flex {
+      justify-content: space-between;
+    }
+
+    .faq_main .faq_box_content .answer_p {
+        width: 100%;  
+    }
+    
+    
+}
+  
+@media (max-width: 426px) {
+    .faq_container {
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+    }
+
+    .faq_container h3 {
+        font-size: 1.600rem;
+    }   
+}
+  
+@media (max-width: 320px) {
+    .faq_box_content .faq_box .faq_flex h4 {
+        font-size: 1rem;
+    }
+
+    .faq_main .faq_box_content .answer_p {
+        font-size: 0.9rem;
+    }
+    
+}
